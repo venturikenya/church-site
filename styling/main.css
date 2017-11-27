@@ -244,6 +244,72 @@ h4.sermons
 
 
 /* START OF CONTACTS SECTION */
+.contacts {
+  height: auto;
+  overflow: hidden;
+}
+
+h3.contacts {
+  margin-top: 10%;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.message-or-map {
+  margin: 25px;
+  color: green;
+  font-size: small;
+  font-weight: bold;
+}
+
+.contacts form {
+  display: table;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.contacts input {
+  
+}
+
+.contacts input[type=text], .contacts textarea, .contacts input[type=email] {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.contacts input[type=submit] {
+  width: 25%;
+  font-size: small;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.contacts form input::placeholder {
+  color: black;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
 footer {
   font-size: 10px;
     bottom: 0;
@@ -270,4 +336,20 @@ footer .fa {
   color: black;
   font-size: xx-large;
   font-weight: 550;
+}
+
+footer .fa-facebook:hover, footer .fa-facebook:focus {
+  color: #3b5998;
+}
+
+footer .fa-twitter:hover, footer .fa-twitter:focus {
+  color: #55acee;
+}
+
+footer .fa-instagram:hover, footer .fa-instagram:focus {
+  color: #bc2a8d;
+}
+
+footer .fa-youtube:hover, footer .fa-youtube:focus {
+  color: #ff0000;
 }

@@ -47,17 +47,31 @@ window.onclick = function(event) {
 /* END OF SERMON SECTION*/
 
 /* **** START OF CONTACTS SECTION **** */
-$(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".container").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      }
+$(document).ready(function () {
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top; // top position of element relative to parent element
+    var elementBottom = elementTop + $(this).outerHeight(true); // bottom position of element, including margin
+
+    var viewportTop = $(window).scrollTop(); // vertical scrollbar position for window
+    var viewportBottom = viewportTop + $(window).height(); // bottom position of window
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+  
+  function animate(element, class_){
+    if (element.isInViewport()) {
+        element.addClass(class_);
+    } else {
+        element.removeClass(class_);
+    }
+  }
+  
+  $(window).on('resize scroll', function() {
+    animate($('footer'), 'w3-animate-zoom');
+  });
+  
+  $(window).on('resize scroll', function() {
+    animate($('section#contacts-section'), 'w3-animate-opacity');
+  });
+});
    
