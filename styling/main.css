@@ -200,6 +200,35 @@ h4.sermons
 }
 /* END OF SERMON SECTION */
 
+/* START OF CONTACTS SECTION */
+footer {
+  font-size: 10px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: transparent;
+    color: #616161;
+    margin: 7.5% 0;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer div.social-media {
+  margin: 30px 0;
+}
+
+footer .fa {
+  margin-right: 5px;
+  color: black;
+  font-size: xx-large;
+  font-weight: 550;
+}
+
 
 
 
