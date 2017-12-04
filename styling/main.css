@@ -354,6 +354,9 @@ footer .fa-youtube:hover, footer .fa-youtube:focus {
   color: #ff0000;
 }
 
+/* END OF CONTACTS SECTION */
+
+/* START OF ABOUT SECTION */
 .about{
     height:1000px;
     display:flex;
@@ -515,3 +518,35 @@ input[type="button"]{
     font-weight:900;
     color:#666;
 }
+
+/* END OF ABOUT SECTION */
+
+/* START OF LIFEGROUP SECTION*/
+.lifegroup {
+  height: auto;
+  overflow: hidden;
+}
+
+h3.lifegroup {
+  margin-top: 10%;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  z-index: 0;
+}
+
+#lifegroup_info {
+  background: red;
+  opacity: 0.9;
+  right: 50px;
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  height: 300px
+}
+
+/* END OF LIFEGROUP SECTION*/

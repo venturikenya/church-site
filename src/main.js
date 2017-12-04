@@ -74,4 +74,11 @@ $(document).ready(function () {
     animate($('section#contacts-section'), 'w3-animate-opacity');
   });
 });
-   
+
+/* **** END OF CONTACTS SECTION **** */
+
+/* ==== START OF LIFEGROUP SECTION ==== */
+$('#lifegroup_info').css({
+  'top': $('#lifegroup-section').offset().top + "px"
+});
+/* ==== END OF LIFEGROUP SECTION ==== */
