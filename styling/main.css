@@ -90,8 +90,8 @@ Author:Fredrick Omollo
     z-index: 1000;
     width: 130px;
     height: 110px;
-    left: 35px;
-    top: 20px;
+    left: 0px;
+    top: 0px;
 }
 
 .search-field{
@@ -102,7 +102,8 @@ Author:Fredrick Omollo
     text-transform: uppercase;
     color: #979898;
     font-weight: 600;
-    margin: 55px;
+    
+
     transition: all .3s;
     background-image: url(../assets/images/local/search.png);
     background-position-x: 248px;
