@@ -321,8 +321,7 @@
         return callback();
       }
     };
-
-    AudioPlayerUI.prototype._bindEvents = function() {
+  AudioPlayerUI.prototype._bindEvents = function() {
       this.$button.on("click", $.proxy(this, "togglePlayPause"));
       this.$backButton.on("click", $.proxy(this, "previousSong"));
       this.$nextButton.on("click", $.proxy(this, "nextSong"));
@@ -352,7 +351,7 @@
     songs: [
       {
         image: "assets/images/sermons.jpg",
-        name: "January sermon - Marriage is work and it works",
+        name: "<b>January sermon<b/> <br/> Marriage is work and it works",
         srcs: [
           {
             src: "audiofiles/SheSnake.mp3",
@@ -474,3 +473,14 @@
   });
 
 }).call(this);
+
+document.getElementById('myCarousel').onmouseover=function()
+{
+  document.getElementById('con').style.display='block';
+  document.getElementById('im').style.display='block';
+}
+document.getElementById('myCarousel').onmouseleave=function()
+{
+  document.getElementById('con').style.display='none';
+  document.getElementById('im').style.display='none';
+}
